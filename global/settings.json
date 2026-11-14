@@ -1,0 +1,20 @@
+{
+  "autoCompactWindow": 400000,
+  "permissions": {
+    "deny": [
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)",
+      "Read(~/.gnupg/**)",
+      "Read(~/.netrc)",
+      "Read(~/.config/gh/hosts.yml)",
+      "Read(~/.docker/config.json)",
+      "Read(~/.kube/config)",
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(!.env.example)",
+      "Read(!.env.sample)",
+      "Read(!.env.template)",
+      "Read(!.env.defaults)"
+    ]
+  }
+}

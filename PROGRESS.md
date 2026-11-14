@@ -86,7 +86,7 @@ tests/               node --test suites for hooks, installer, repo lint
 ## Build plan
 
 - [x] 0. Research the four sources and current Claude Code docs
-- [ ] 1. `global/`: CLAUDE.md, path-scoped rules, settings.json, statusline.js,
+- [x] 1. `global/`: CLAUDE.md, path-scoped rules, settings.json, statusline.js,
       Explore override
 - [ ] 2. `hooks/` with tests
 - [ ] 3. `agents/`
@@ -307,3 +307,7 @@ Do not redo this research. Claude Code version on the build machine: 2.1.325.
 ## Checkpoint log
 
 - 2026-11-14: research complete, design settled, this file written.
+- 2026-11-14: stage 1 done. `global/` holds CLAUDE.md (42 lines), nine path-scoped
+  rules, the Haiku `Explore` override, the settings template and the status line.
+  Next: stage 2, hooks. Hooks share `hooks/lib.js`; a global hook steps aside when
+  the project has its own copy under `.claude/hooks/`.
